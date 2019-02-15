@@ -1,0 +1,40 @@
+function getPrice() {
+
+    var type = 'post';
+    var city = $("#city").val();
+    var area = $("#area").val();
+    var grade = $("#grade").val();
+    var phone = $("#phone").val();
+    var myreg = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0-9]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+    var url = window.location.href;
+
+    if(phone == ''){
+        alert("手机号码不能为空！");
+        return false;
+    }else if(phone.length !=11){
+        alert("请输入有效的手机号码！");
+        return false;
+    }else if(!myreg.test(phone)){
+        alert("请输入有效的手机号码！");
+        return false;
+    }
+    $.ajax({
+        url: "http://anli.rxjy.com/zt/bm.php",
+        data:{
+            city : city,  //所在城市
+            area : area,  //装修面积
+            grade : grade,  //装修档次
+            phone : phone,  //手机号
+            url : url,
+        },
+        type:"POST",
+        dataType:"json",
+
+        success: function (data) {//返回数据根据结果进行相应的处理
+            alert("恭喜您报名成功，请保持电话畅通，稍等片刻······");
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("系统错误");
+        }
+    });
+}

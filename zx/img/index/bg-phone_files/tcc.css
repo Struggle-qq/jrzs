@@ -1,0 +1,107 @@
+﻿@charset "utf-8";
+/* 基础css  清除默认样式*/
+
+a:focus{outline:none;}
+i,em{font-style:normal;}
+.fl{float:left;}
+.fr{float:right;}
+.clearfix:after{display:block;clear:both;content:'';}
+.clearfix{zoom:1;}
+select,input{outline:none; border:none 0; padding:0;}
+textarea{outline:none; resize:none; padding:0;}
+ul,ol{list-style:none; vertical-align:top; padding: 0;}
+a img{border:0;}
+table,th,td,tr{padding:0;}
+table{border-collapse: collapse;}
+
+.relative{ position: relative;}
+.article-content p{margin-bottom:.9375rem;}
+
+/*弹窗部分*/
+.popup{position: fixed; width: 100%; height: 104px; bottom: 0; left:0; display: none;}
+.popup_box{width: 100%; position: absolute; opacity: 0.8; filter:alpha(opacity=80); top:0; background: #333; height: 100%; left:0;}
+.box_color{position: absolute; left:50%; top:0; width:100%; height: 100%; margin-left: -501px;}
+.box_color .free{margin-left: 5px; margin-top: 11px;}
+.box_color .offer{margin-left: 12px; margin-top: 15px; border-right: 1px dashed #adadad; height: 78px; padding-right: 23px;}
+.box_color .offer span{display: block; color: #fff; font-size: 18px;}
+.box_color .offer .offer_t{margin-top: 17px;}
+.box_color .offer .offer_b{margin-top: 6px;}
+.box_color .offer_two{margin-left: 22px; margin-top: 15px; border-right: 1px dashed #adadad; padding-right: 22px; height: 78px;}
+.sel_one{color: #666; width: 123px; height: 30px;padding: 0; padding-left: 10px; }
+input[type=text].text_area{width: 113px; height: 30px; margin-left: 2px; color: #666; padding-left: 10px; line-height: 30px; border-radius: 0;border: none;}
+.sel_two{width: 123px; height: 30px; margin-left: 2px; color: #666;padding: 0; padding-left: 10px;}
+.tell_box{margin-top: 4px;}
+.city_box{margin-top: 8px; height: 32px; overflow: hidden;}
+.city_box * { margin-bottom: 0;}
+.tell_box input[type=text]{width: 238px; height: 30px; padding-left: 12px; color: #666; line-height: 30px;border-radius: 0;border: none;}
+.tell_box a{width: 123px; height: 30px; color: #fff; font-size: 14px; background:#ce2222; line-height: 30px; text-align: center; margin-left: 2px;}
+.tell_box a:hover{background: #f26e19; color: #fff;}
+.sweep{margin-left: 21px; margin-top: 11px;}
+.sweep span{color: #fff; display: block;}
+.sweep img{display: block; margin-top: 5px; margin-left: 25px;}
+.close{background:url(../images/close.png) no-repeat; width: 34px; height: 34px; margin-left: 16px; margin-top: 6px;}
+/*悬浮小窗口*/
+#appear{position: fixed; left:-160px; bottom: 0; background: url(../images/appear.png) no-repeat; width: 160px; height: 94px; display: none; z-index:99999999;}
+
+
+/*右侧悬浮层样式*/
+.mb10{margin-bottom: 10px;}
+.fixedright{position: fixed;left:0;top:175px;z-index: 50;}
+.helpbox{position:relative;width: 270px;padding:0 10px 0;background: #f0f0f0;border-radius:4px; box-sizing: inherit;}
+.helpbox-tit{height: 22px;}
+.helpbox .shrink,.helpbox .help-close{width: 12px;height: 12px;overflow: hidden;margin-top: 5px;margin-right: 5px;}
+.helpbox .shrink{background: url(../images/shrink.png) no-repeat;}
+.helpbox .help-close{background: url(../images/helpclose.png) no-repeat;display: none;}
+.helpbox .help-img{position: absolute;left: 0;top: 0;width: 105px;height: 87px;overflow: hidden;}
+.helpbox .online-help{position: absolute;left: 118px;top: 65px;color: #d13529;font-size: 13px;background: url(../images/onlineico.png) no-repeat left center;padding-left: 26px;font-size: 13px;}
+.helpbox .helptext{margin-left: 118px;padding-right: 20px;overflow: hidden;color: #000;min-height: 87px; box-sizing:content-box;}
+.helpbox .helptext h2{font-size: 18px;margin-bottom: 5px;}
+.helpbox .helptext p{font-size: 12px;line-height: 18px;}
+.telephone-help{border-top: 1px solid #dcdcdc;margin-top: 4px;padding:4px 0;}
+.telephone-help a{background: url(../images/phoneico.png) no-repeat left center;padding-left: 28px;font-size: 13px;margin-left: 10px;color: #000;}
+.helpbox-small{width:105px;height: 102px;}
+.helpbox-small .shrink{display: none;}
+.helpbox-small .help-close{display: block;margin-right: -5px;}
+.helpbox-small .help-img{height: 50px;}
+.helpbox-small .helptext,.helpbox-small .telephone-help{display: none;}
+.helpbox-small .online-help{left: 0;top: 55px;}
+
+.suspendbox{position:relative;width:185px;background: #f0f0f0;/*height:357px;*/}
+.suspendbox a{display: block;/*height: 100%;*/}
+.suspendbox-tit{background: #d13529;height: 42px;line-height: 42px;color: #fff;padding:0 16px;font-size: 20px;text-align: left;position:relative;}
+.suspendbox-close{position:absolute;right:16px;top:13px;background: url(../images/suspendboxclose.png) no-repeat;width: 16px;height: 16px;overflow: hidden;}
+.suspendbox-tit .plus{background: url(../images/plusicon.png) no-repeat;width: 20px;height:20px;display: none;}
+.suspendbox-con{padding: 6px 0;}
+.suspendbox-list{position: relative;line-height: 20px;}
+.suspendbox-list a{padding:0 6px;}
+.suspendbox-list .span-ico{position:absolute;left:6px;top:10px;background: url(../images/spanico.png) no-repeat;width: 36px;height: 36px;overflow: hidden;}
+.suspendbox-list .chat-icon{background-position: 0 0;}
+.suspendbox-list .designer-icon{background-position: -46px 0;}
+.suspendbox-list .phone-icon{background-position: -92px 0;}
+.suspendbox-list .wechat-icon{background-position: -231px 0;width: 59px;height: 59px;left: 2px;top: 9px;}
+.suspendbox-list .filiale-icon{background-position: -184px 0;}
+.suspendbox-list a:hover .chat-icon{background-position: 0 -46px;}
+.suspendbox-list a:hover .designer-icon{background-position: -46px -46px;}
+.suspendbox-list a:hover .phone-icon{background-position: -92px -46px;}
+.suspendbox-list a:hover .filiale-icon{background-position: -184px -46px;}
+
+.suspendbox-list-con{border-bottom: 1px solid #dbdbdb;margin-left: 46px;padding:8px 0;}
+.suspendbox-list.last .suspendbox-list-con{border-bottom-color: transparent;}
+.suspendbox-list-con h2{font-size: 13px;color: #000; margin: 2px 0 4px 0;}
+.suspendbox-list-con p{font-size:12px;color: #000; margin-bottom: 4px;}
+.suspendbox-list a:hover h2{color: #d13529;}
+.suspendbox-list a:hover p{color: #d13529;}
+.wechat-list .suspendbox-list-con{padding-left: 20px;}
+
+.suspendbox-small {width: 65px;}
+.suspendbox-small .suspendbox-con a:hover{background: #fff;box-shadow:0 2px 5px rgba(0,0,0,.1),0 -2px 5px rgba(0,0,0,.1);transition:background  ease-in-out .3s,box-shadow ease-in-out .3s;}
+.suspendbox-small .suspendbox-tit{padding:11px 0;height: 20px;line-height: 20px;}
+.suspendbox-small .plus{display: block;margin: 0 auto;}
+.suspendbox-small .suspendbox-span{display: none;}
+.suspendbox-small .suspendbox-con{padding: 0;}
+.suspendbox-small .suspendbox-list{height: 63px;}
+.suspendbox-small .span-ico{left: 14px;}
+.suspendbox-small .wechat-icon{background-position:-138px 0 ;width:36px;height: 36px;top: 10px;}
+.suspendbox-small a:hover .wechat-icon{background-position:-138px -46px ;}
+.suspendbox-small .suspendbox-list-con{display: none;}
+

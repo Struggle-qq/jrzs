@@ -1,0 +1,366 @@
+﻿@charset "utf-8";
+/*公共重置样式 开始*/
+body {
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+
+}
+
+a,body,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,i,input,li,ol,p,span,td,textarea,th,ul,img {
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:focus {
+    outline: 0
+}
+a img {
+    border:none;
+    outline: none;
+}
+
+
+li {
+    list-style: none
+}
+
+em,i {
+    font-style: normal
+}
+/* 左浮动 */
+
+.left {float:left;}
+
+/* 右浮动 */
+
+.right{float:right;}
+.fl {
+    display: inline;
+    float: left
+}
+
+.fl {
+    display: inline;
+    float: left
+}
+
+.fr {
+    display: inline;
+    float: right
+}
+.relative {
+    position: relative;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+.clearfix {
+    zoom: 1
+}
+
+input,select,textarea {
+    font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    color: #666;
+    outline: 0;
+    resize: none;
+    padding: 0 8px;
+}
+
+input[type=week],input[type=number],input[type=email],input[type=url],input[type=search],input[type=tel],input[type=color],input[type=text],input[type=password],input[type=datetime],input[type=date],input[type=month],input[type=time],select,textarea {
+    border: 1px solid #ccc;
+    background: #fff
+}
+
+
+
+input[type=text],input[type=password] {
+    padding: 0 8px;
+    height: 28px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+
+/*公共重置样式 结束*/
+
+/*内填充及外补丁 开始*/
+
+.pa5 {
+    padding: 5px
+}
+.plr5 {padding-left: 5px; padding-right: 5px}
+.pt5 {
+    padding-top: 5px
+}
+
+.pb5 {
+    padding-bottom: 5px
+}
+
+.pl5 {
+    padding-left: 5px
+}
+
+.pr5 {
+    padding-right: 5px
+}
+
+.pa10 {
+    padding: 10px
+}
+.plr10 {padding-left: 10px; padding-right: 10px}
+.pt10 {
+    padding-top: 10px
+}
+
+.pb10 {
+    padding-bottom: 10px
+}
+
+.pl10 {
+    padding-left: 10px
+}
+
+.pr10 {
+    padding-right: 10px
+}
+
+.pa20 {
+    padding: 20px
+}
+.plr20 {padding-left: 20px; padding-right: 20px}
+.pt20 {
+    padding-top: 20px
+}
+
+.pb20 {
+    padding-bottom: 20px
+}
+
+.pl20 {
+    padding-left: 20px
+}
+
+.pr20 {
+    padding-right: 20px
+}
+
+.ma5 {
+    margin: 5px
+}
+
+.ml5 {
+    margin-left: 5px
+}
+
+.mr5 {
+    margin-right: 5px
+}
+
+.mt5 {
+    margin-top: 5px
+}
+
+.mb5 {
+    margin-bottom: 5px
+}
+
+.ma10 {
+    margin: 10px
+}
+
+.ml10 {
+    margin-left: 10px
+}
+
+.mr10 {
+    margin-right: 10px
+}
+
+.mt10 {
+    margin-top: 10px
+}
+
+.mb10 {
+    margin-bottom: 10px
+}
+
+.ma20 {
+    margin: 20px
+}
+
+.ml20 {
+    margin-left: 20px
+}
+
+.mr20 {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.mt20 {
+    margin-top: 20px
+}
+
+.mb20 {
+    margin-bottom: 20px
+}
+/*内填充及外补丁 结束*/
+
+/*控制元素显隐及行内、块 开始*/
+
+
+.dis-block {
+    display: block
+}
+
+.dis-none {
+    display: none
+}
+
+.dis-il-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dis-inline {
+    display: inline-block
+}
+
+.visi-hidden {
+    visibility: hidden
+}
+/*控制元素显隐及行内、块 结束*/
+
+
+/*控制文本对齐及大小、行高、加粗 开始*/
+.tx-fb { font-weight: bold}
+.tx-center {
+    text-align: center
+}
+
+.tx-left {
+    text-align: left
+}
+
+.tx-right {
+    text-align: right
+}
+
+.fz0 {
+    font-size: 0
+}
+.fz12 {
+    font-size: 12px
+}
+
+.fz14 {
+    font-size: 14px
+}
+
+.fz16 {
+    font-size: 16px
+}
+
+.fz18 {
+    font-size: 18px
+}
+
+.lh18 {
+    line-height: 18px
+}
+
+.lh22 {
+    line-height: 22px
+}
+.lh28 {
+    line-height: 28px
+}
+.lh30 {
+    line-height: 30px
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+/*控制文本对齐及大小、行高、 结束*/
+
+
+
+
+/* 栅格系统 开始*/
+.col-md-12 {
+    width: 100%
+}
+
+.col-md-11 {
+    width: 91.66666667%
+}
+
+.col-md-10 {
+    width: 83.33333333%
+}
+
+.col-md-9 {
+    width: 75%
+}
+
+.col-md-8 {
+    width: 66.66666667%
+}
+
+.col-md-7 {
+    width: 58.33333333%
+}
+
+.col-md-6 {
+    width: 50%
+}
+
+.col-md-5 {
+    width: 41.66666667%
+}
+
+.col-md-4 {
+    width: 33.33333333%
+}
+
+.col-md-3 {
+    width: 25%
+}
+.col-md-2 {
+    width: 16.66666666%
+}
+.col-md-1 {
+    width: 8.33333333%
+}
+.col-md-1 ,.col-md-2,.col-md-3 ,.col-md-4,.col-md-5 ,.col-md-6,.col-md-7 ,.col-md-8,.col-md-9 ,.col-md-10,.col-md-11 ,.col-md-12{
+    float: left;
+}
+/* 栅格系统 结束*/
+/*文本框，及表单组合 开始*/
+/*.form-control:focus {
+    border: 1px solid #46a1fe;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}*/
+
+
+
+
+
+
+
+
+
